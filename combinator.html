@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector</title>
+
+    <style>
+        div p {
+            color: red;
+        }
+        div > p {
+            background-color: yellow;
+        }
+        div + p {
+            background-color: darkgrey;
+        }
+        div ~ p {
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Aturan CSS ini akan membuat semua elemen p yang berada dalam elemen div memiliki warna teks merah.</p> <!--kesimpulan uji coba -->
+        <p>Paragraf ini menggunakan selector > pada CSS yang digunakan untuk memilih elemen p yang merupakan "anak langsung" dari elemen div.</p> <!--kesimpulan uji coba -->
+    </div>
+    <p>Pada paragraf ini warna backgroundnya akan diterapkan pada elemen p yang berada tepat setelah elemen div, tetapi tidak akan berlaku untuk elemen p yang tidak langsung berada setelah elemen div.</p> <!--kesimpulan uji coba -->
+    <p>Pada paragraf ini elemen p yang berada setelah elemen div akan diubah warna teksnya menjadi cyan, sementara elemen p yang tidak berada setelah div tidak akan terpengaruh.</p> <!--kesimpulan uji coba -->
+</body>
+</html>
